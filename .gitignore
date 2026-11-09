@@ -1,0 +1,56 @@
+# Local Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+*.log
+
+# Credentials and private local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/secrets.*.toml
+.netrc
+_netrc
+.earthdata_auth
+.aws/
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+token*.json
+
+# Local satellite data and exported results; download the public example instead
+data/*
+!data/README.md
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*.SAFE/
+*.safe/
+*.zip
+*.part
+*.ovr
+*.aux.xml
+*_preview.png
+sar_display_settings*.json
+sample_catalog.xml
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
