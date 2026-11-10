@@ -96,25 +96,3 @@ tests/                     Numerical and application smoke tests
 ## License
 
 Application code: [MIT](LICENSE). Source imagery retains its own terms and attribution.
-
-## Publishing on GitHub
-
-Publish the source files, documentation, illustrations and `.github` / `.streamlit`
-configuration folders. The `.gitignore` excludes local environments, downloaded
-rasters, exported results, credentials and build archives. The example image is
-downloaded on demand; it does not need to be stored in the repository.
-
-Before committing, inspect the exact file list:
-
-```bash
-git status --short --untracked-files=all
-git add .
-git diff --cached --stat
-git diff --cached
-git commit -m "Initial release of SAR Image Viewer"
-```
-
-Use `sar-image-viewer` as the repository name. Suggested description:
-"A lightweight SAR GeoTIFF viewer with decibel scaling, interactive display controls and PNG export."
-
-Keep the data attribution in `data/README.md` and the MIT license in the repository.
